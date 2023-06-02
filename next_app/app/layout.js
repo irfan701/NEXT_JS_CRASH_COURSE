@@ -1,7 +1,12 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import {Poppins } from 'next/font/google'
+import React from "react";
 
-const inter = Inter({ subsets: ['latin'] })
+
+const poppins=Poppins({
+  weight:['400','700'],
+  subsets: ['latin']
+})
 
 export const metadata = {
   title: 'Hayyat Mart',
@@ -12,7 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>
+      <main className='container'>
+        {children}
+      </main>
+
+      </body>
     </html>
   )
 }
