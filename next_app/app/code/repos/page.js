@@ -27,7 +27,7 @@ const ReposPage = async () => {
 
 
                     </p>
-                    <Link href={`code/repo/${item.name}`} className="btn btn-primary">Go Repository</Link>
+                    <Link href={`code/repos/${item.name}`} className="btn btn-primary">Go Repository</Link>
                 </div>
             </div>
         })}
