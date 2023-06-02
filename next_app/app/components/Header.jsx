@@ -21,6 +21,7 @@ const Header=()=> {
                         <Link  className="nav-link active" href="/">Home</Link>
                         <Link  className="nav-link" href="/about">About</Link>
                         <Link  className="nav-link" href="/about/team">our Team</Link>
+                        <Link  className="nav-link" href="/code/repos">Repo</Link>
                     </div>
                 </div>
             </div>
