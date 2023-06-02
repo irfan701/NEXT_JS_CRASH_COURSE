@@ -1,6 +1,10 @@
 import './globals.css'
+import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
+
 import {Poppins } from 'next/font/google'
-import React from "react";
+import Header from "./components/Header";
+
+
 
 
 const poppins=Poppins({
@@ -18,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
+      <Header/>
       <main className='container'>
         {children}
       </main>
