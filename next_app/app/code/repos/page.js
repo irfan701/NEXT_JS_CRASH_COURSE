@@ -4,6 +4,7 @@ import Link from "next/link";
 async function fetchRepos() {
 
     const response=await fetch('https://api.github.com/users/irfan701/repos')
+    await new Promise((resolve,reject)=>setTimeout(resolve,1000))
     const repos= await response.json()
     return Promise.all(repos)
 }
