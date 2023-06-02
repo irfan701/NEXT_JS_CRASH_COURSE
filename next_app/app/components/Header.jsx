@@ -1,6 +1,12 @@
+"use client"
 import Link from "next/link";
+import {useState} from "react";
+
 
 const Header=()=> {
+
+    const[count,setCount]=useState(0)
+
     return <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
